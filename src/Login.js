@@ -13,8 +13,8 @@ export function Login(props) {
       noValidate
       autoComplete="off"
     >
-      <TextField id="standard-basic" label="User Name" variant="standard" />
-      <TextField id="standard-basic" label="Password" variant="standard" />
+      <TextField id="standard-basic" label="Username*" variant="standard" />
+      <TextField id="standard-basic" label="Password*" variant="standard" />
     
     </Box>
   );
