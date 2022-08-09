@@ -1,9 +1,8 @@
 import './App.css';
 import React, {Component} from 'react';
 import ButtonAppBar from './ButtonAppBar';
-import { OutlinedButtons } from './OutlinedButtons';
 import Dashboard from './components/Dashboard.js';
-import{Login} from './Login';
+import{LoginScreen} from './LoginScreen';
 class App extends Component {
   constructor(){
     super()
@@ -11,12 +10,17 @@ class App extends Component {
       loggedin: false
     }
   };
-  handleClick = (e) =>{
-    // this.state.isCllicked ? 
+  handleSubmit = (e) =>{
+     
     this.setState({loggedin : true}) 
-    // : this.setState({loggedin : false})
-    console.log('you clicked me');
-  }
+    
+    //console.log('you clicked me');
+  };
+  handleOnline = (e) =>{
+    let status = this.state.loggedin=== true ? false : true
+    // console.log ('you are online');
+  };
+
   render(){
     return !this.state.loggedin ?(
 
@@ -24,16 +28,24 @@ class App extends Component {
       <ButtonAppBar></ButtonAppBar>
       <header className="App-header">
       <p> Please Log In</p>
-      <Login></Login> 
+     
       <br></br>
       <br></br>
-      <OutlinedButtons handleClick={this.handleClick}></OutlinedButtons>
+      <LoginScreen handleSubmit={this.handleSubmit}></LoginScreen>
       </header>
       </div>
     )
     :(
-      <Dashboard></Dashboard>
-      )
+      <div>
+    
+         <ButtonAppBar></ButtonAppBar>
+         
+      <div className= "Dash">
+        
+        <Dashboard></Dashboard>
+      {/* <OnlineCard handleOnline={this.handleOnline}></OnlineCard> */}
+      </div></div>
+      );
     
   }
 }

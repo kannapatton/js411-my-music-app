@@ -36,4 +36,32 @@
     transform: rotate(360deg);
   }
 }
+.Dash{
+  background-color: #d32323;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashContainer{
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
+.online{
+  width:25vw; 
+  height: 25vh;
+}
+.Volume{
+  width: 25vw;
+  height: 25vh;
+
+}
+.SoundQuality{
+  width: 25vw;
+  height: 25vh;
+
+}
