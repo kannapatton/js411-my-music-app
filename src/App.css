@@ -51,17 +51,9 @@
   align-items: center;
 }
 
-.online{
-  width:25vw; 
-  height: 25vh;
+.welcome{
+  background-color: #d32323;
 }
-.Volume{
-  width: 25vw;
-  height: 25vh;
-
-}
-.SoundQuality{
-  width: 25vw;
-  height: 25vh;
-
+.hi{
+  padding-left: 20px;
 }

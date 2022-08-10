@@ -27,14 +27,14 @@ const handleOnline = (e) => {
     <Card>
       <Box>
         <CardContent>
-          <Typography variant= 'h3'>
-            Welcome User!
+          <Typography variant= 'h6'>
+            Is this application connected to the internet?
           </Typography>
           <CardActions>
       <Switch checked={online.isOnline} onChange={handleOnline} name="isOnline" inputProps={{
         "aria-label":"secondary checkbox"}}/>
         </CardActions>
-        <h3>System Notifcations:</h3>
+        <h3>Online Notification:</h3>
      <Typography sx={{ fontsize:20}} color="text.secondary" gutterBottom>
       {notification.online}
      </Typography>

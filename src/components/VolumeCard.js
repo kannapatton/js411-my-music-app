@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
+import { FormControl } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Slider from '@mui/material/Slider';
@@ -68,11 +69,15 @@ const VolumeCard = () =>{
       <Typography variant="h5" component="div">
         Master Volume
       </Typography>
+      <Typography>Overrides all other sound settings in this application</Typography>
      <CardActions>
+     <FormControl fullWidth>
         <VolumeDown/>
         <Slider size='medium' aria-label='medium' value={volume} onChange={handleSound} valueLabelDisplay="auto" step={null} marks={marks}/>
         <VolumeUp/>
+        </FormControl>
     </CardActions>
+    <Typography><h3>Volume Notification:</h3></Typography>
   <Typography sx={{fontSize: 25}} color="text.secondary" gutterBottom>
     {notification.volume}
   </Typography>

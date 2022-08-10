@@ -35,6 +35,7 @@ const SoundCard = () => {
     Sound Quality
 
 </Typography>
+<Typography>Manually control the music quality in the event of poor connection</Typography>
 <CardActions>
 <FormControl fullWidth>
     <Select value={quality} onChange={handleQuality} style={{ width: 300 }}>
@@ -44,6 +45,7 @@ const SoundCard = () => {
     </Select>
 </FormControl>
 </CardActions>
+<Typography><h3>Quality Notification:</h3></Typography>
 <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
 {notification.quality}
 </Typography>

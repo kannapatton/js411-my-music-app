@@ -36,15 +36,15 @@ class App extends Component {
       </div>
     )
     :(
-      <div>
+      <div className='welcome' >
     
          <ButtonAppBar></ButtonAppBar>
-         
+        <div className='hi'><h1>Welcome User!</h1></div>
       <div className= "Dash">
         
         <Dashboard></Dashboard>
       {/* <OnlineCard handleOnline={this.handleOnline}></OnlineCard> */}
-      </div></div>
+      </div></div> 
       );
     
   }

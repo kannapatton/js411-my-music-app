@@ -8,7 +8,9 @@ import SoundQualityCard from './SoundQualityCard';
 
 const DashBoard =()=> {
 return(
+
     <div className='dashContainer'>
+       
      <div className='Online'>
      {/* CARD 1 - ONLINE MODE */}
        
